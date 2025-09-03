@@ -85,7 +85,7 @@ Slack channel → Intelligent alerts from Datadog monitors
 
 📸 Screenshots
 
-✅ Datadog dashboard showing Nginx metrics
+✅ Datadog dashboard showing Nginx metrics 
 
 ✅ Slack channel receiving alerts
 
