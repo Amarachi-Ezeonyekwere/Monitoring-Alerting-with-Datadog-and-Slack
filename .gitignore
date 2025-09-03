@@ -1,0 +1,10 @@
+# Ignore env files
+.env
+
+# Ignore OS / editor files
+*.log
+*.swp
+.DS_Store
+
+# Ignore Docker stuff
+*.pid

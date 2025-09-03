@@ -1,0 +1,22 @@
+services:
+  nginx:
+    build: ./nginx
+    container_name: my-nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+
+  datadog:
+    image: datadog/agent:latest
+    container_name: dd-agent
+    environment:
+      - DD_API_KEY=${DD_API_KEY}
+      - DD_SITE=us5.datadoghq.com
+      - DD_LOGS_ENABLED=true
+      - DD_APM_ENABLED=true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./datadog/conf.d:/etc/datadog-agent/conf.d:ro
+    depends_on:
+      - nginx
