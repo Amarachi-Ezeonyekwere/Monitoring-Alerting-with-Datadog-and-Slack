@@ -3,6 +3,7 @@ Monitoring & Intelligent Alerting with Nginx, Datadog, and Slack
 📌 Project Overview
 
 In modern IT environments, uptime and performance are critical. Businesses lose millions in revenue and reputation due to unnoticed outages, slow response times, or excessive alert noise.
+
 This project implements a containerized monitoring solution that integrates:
 
 ▪️Nginx as a web service
@@ -39,7 +40,7 @@ Business Impact :
 
 ▪️Faster incident resolution → lower operational costs.
 
-🛠 Technical Implementation
+ Technical Implementation
 
 Project Structure
 
@@ -87,9 +88,13 @@ Slack channel → Intelligent alerts from Datadog monitors
 
 ✅ Datadog dashboard showing Nginx metrics ![Dashboard Image](./Screen_Shots/dashboard.png)
 
-✅ Slack channel receiving alerts
+✅ Anomaly Monitor for Nginx Request Per Second ![Anomaly Image](./Screen_Shots/Anomaly%20Monitor.png)
 
-✅ Nginx status page
+✅ Slack channel receiving alerts ![Slack Image](./Screen_Shots/Slack%20Alert.png)
+
+✅ Nginx status page ![Nginx Image](./Screen_Shots/Monitor.png)
+
+*Up next I will be using Terraform to deploy Infrastructure, host a website on my nginx and automate deployment using CI/CD pipeline*
 
 
 
