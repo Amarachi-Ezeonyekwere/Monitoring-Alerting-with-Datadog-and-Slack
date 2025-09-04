@@ -85,6 +85,7 @@ Datadog GUI → Metrics collected from Nginx
 Slack channel → Intelligent alerts from Datadog monitors
 
 📸 Screenshots
+✅ Project Architecture ![Architecture Image](./Screen_Shots/Docker%20Project%20Architecture%20.png)
 
 ✅ Datadog dashboard showing Nginx metrics ![Dashboard Image](./Screen_Shots/dashboard.png)
 
